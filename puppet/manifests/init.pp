@@ -10,4 +10,4 @@ file { '/var/www/':
   ensure => 'directory',
 }
 
-include nginx, php, mysql, composer
+include nginx, php, mysql, composer, git

@@ -19,4 +19,10 @@ class php {
     path    => '/usr/bin:/usr/sbin',
     require => Package['php5-fpm']
   }
+
+  exec { "php5-mysql":
+    command => 'sudo apt-get install -y php5-mysql',
+    path    => '/usr/bin:/usr/sbin',
+    require => Package['php5-fpm']
+  }
 }
