@@ -1,6 +1,6 @@
-# vagrant/puppet/modules/nginx/files/127.0.0.1
+# vagrant/puppet/modules/nginx/files/10.0.0.10
 server {
-  listen 81;
+  listen 80;
   server_name _;
   root /var/www/bento/web;
   index app_dev.php;
